@@ -70,7 +70,7 @@ public class PluginsPlugin implements FlutterPlugin, MethodCallHandler {
                                                                                                       // // device
       );
       chan_handle = cerevoice_eng.CPRCEN_engine_open_default_channel(eng);
-      //cerevoice_eng.CPRCEN_channel_set_pipe_length(eng, chan_handle, 0);
+      cerevoice_eng.CPRCEN_channel_set_pipe_length(eng, chan_handle, 0);
       result.success("Done");
     } else if (call.method.equals("cereSpeak")) {
       final String txtIn = call.argument("text");
