@@ -147,8 +147,8 @@ dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^
     //
     // Clean up
     //
-    //CPRCEN_engine_channel_close(eng, chan);
-    //free(ud);
+    CPRCEN_engine_channel_close(eng, chan);
+    free(ud);
 });
 
 
