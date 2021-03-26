@@ -21,7 +21,7 @@ A new flutter plugin project.
   s.vendored_libraries = 'Files/libcerevoice_dnn.a', 'Files/libcerevoice_dsp.a', 'Files/libcerevoice_eng.a', 'Files/libcerevoice_gen.a', 'Files/libcerevoice_dnn.a', 'Files/libcerevoice.a'
    s.dependency 'Flutter'
   s.platform = :ios, '8.0'
-  s.xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7'}
+  s.xcconfig = {'EXCLUDED_ARCHS' => 'armv7'}
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'}
