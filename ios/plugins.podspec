@@ -18,7 +18,7 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.library = 'c++'
   s.frameworks = 'AVFoundation', 'Accelerate'
-  #s.vendored_libraries = 'Files/libcerevoice_dnn.a', 'Files/libcerevoice_dsp.a', 'Files/libcerevoice_eng.a', 'Files/libcerevoice_gen.a', 'Files/libcerevoice_dnn.a', 'Files/libcerevoice.a'
+  s.vendored_libraries = 'Files/libcerevoice_dnn.a', 'Files/libcerevoice_dsp.a', 'Files/libcerevoice_eng.a', 'Files/libcerevoice_gen.a', 'Files/libcerevoice_dnn.a', 'Files/libcerevoice.a'
    s.dependency 'Flutter'
   s.platform = :ios, '8.0'
   s.xcconfig = {'EXCLUDED_ARCHS' => 'armv7'}
